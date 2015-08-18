@@ -75,10 +75,10 @@ Phaser.Plugin.cameraShaker.prototype.constructor = Phaser.Plugin.SamplePlugin;
 
 Phaser.Plugin.cameraShaker.prototype.setupShake = function(count) {
     this.settings.shakeFrameCount = count;
-    this.settings.shakeAmplitude = arguments[1] || this.settings.shakeAmplitude;
-    this.settings.shakeMode = arguments[2] || this.settings.shakeMode;
-    this.settings.shakeVolume = arguments[3] || this.settings.shakeVolume;
-    this.settings.shakeVolFactor = arguments[4] || this.settings.shakeVolFactor;
+    this.settings.shakeAmplitude = arguments[1] || 20;
+    this.settings.shakeMode = arguments[2] || 'xandy';
+    this.settings.shakeVolume = arguments[3] || 'constant';
+    this.settings.shakeVolFactor = arguments[4] || 0;
 };
 
 Phaser.Plugin.cameraShaker.prototype.update = function() {
